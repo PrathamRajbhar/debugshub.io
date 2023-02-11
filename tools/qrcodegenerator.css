@@ -1,0 +1,26 @@
+.qr-code-image {
+    width: 12.5rem;
+}
+
+.qrimage {
+    display: flex;
+    justify-content: center;
+}
+
+#donwload-suggesation {
+    display: none;
+    font-weight: 600;
+}
+
+#qrimage {
+    /* visibility:hidden; */
+    padding-top: 50px;
+    background: linear-gradient(320deg, #5eab5e, #ff5722);
+    padding-bottom: 50px;
+    border-radius: 16px;
+}
+
+.container.col-xxl-8 {
+    padding-top: 121px;
+    padding-bottom: 10%;
+}

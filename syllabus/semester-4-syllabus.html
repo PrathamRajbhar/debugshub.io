@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../image/logo.png" type="image/x-icon">
+    <title>Blog </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Blog CSS -->
+    <!-- <link rel="stylesheet" href="qrcodegenerator.css"> -->
+
+</head>
+
+<style>
+    .box-coinatainer {
+        padding: 10px;
+        padding-top: 5rem   ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        padding-top: 15px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+
+    .subject-title {
+        text-align: center;
+        color: #DD4124;
+        font-weight: 600;
+    }
+
+    .syllabus-btn {
+        padding: 10px;
+        text-align: center;
+    }
+    .open-btn:hover{
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: 0.5s;
+        background-color: rgb(18, 85, 210);
+    }
+    .open-btn{
+        transition: 0.5s;
+    }
+    @media only screen and (max-width: 1000px) {
+        .box-coinatainer {
+            justify-content: center;
+        }
+    }
+    
+</style>
+
+
+<body>
+    <div class="cointaner">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg  navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://debugshub.web.app">
+                    <!-- <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top"> -->
+                    <img src="../image/logo.png" alt="Logo" width="40" height="28"
+                        class="d-inline-block align-text-top">
+                    DebugHubs
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="
+              nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../service.html">Services</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Missions
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">JAVA</a></li>
+                                <li><a class="dropdown-item" href="#">C++</a></li>
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">Python</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Online Tools
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="../tools/qrcodegenerator.html">QR CODE GENERATOR</a>
+                                </li>
+                                <li><a class="dropdown-item" href="tools/cgpatoper.html">CGPA TO Percantage</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about_us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item" id="sign-in">
+                            <button id="login_btn" type="button" class="btn btn-primary"><a
+                                    href="../login.html">Login</a></button>
+                        </li>
+                        <li class="nav-item" id="sign-out">
+                            <button id="signout_btn" type="button" class="btn btn-danger"><a
+                                    href="#" onclick="signout_data()">Sign Out</a></button>
+                        </li>
+                        <li class="nav-item" id="dark-buttons">
+                            <button class="btn btn-light" id="toggle-dark-mode">
+                                <i class="fas fa-moon"></i>
+                              </button>                              
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="box-coinatainer container-fluid">
+
+
+
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/dbms.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">Advance Database Management System</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2401 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/advanced-database-management-system/adbms.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/cn.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">Computer Network</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2402 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/computer-network/cn.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/fsd.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">Fundamental of Software Design</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2403 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/fundamental-of-software-design/fsd.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/guibad.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">GUI Base Application Development</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2404 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/gui-base-application-development/guibad.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/csa.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">Computer System Architecture</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2405 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/computer-system-architecture/csa.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top" src="../image/syllabus/css.png" alt="Card image cap">
+                </center>
+                <div class="card-body">
+                    <h5 class="subject-title">Web Designing With CSS Framework</h5>
+                    <p class="card-text text-center">Subject Code : 1CE2406 </p>
+                    <div class="syllabus-btn">
+                        <a target="_blank" href="https://d1prjjs37junl3.cloudfront.net/subject/web-designing-with-css-framework/css.pdf" class="btn btn-danger open-btn">OPEN</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+
+
+        <footer id="footer" class="bg-dark">
+            <div class="footer-newsletter bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4>Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="" method="post"> <input type="email" name="email"
+                                    placeholder="Enter Email Address"><input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links ">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contact Us</h4>
+                            <p> A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
+                                <strong>Phone:</strong> +1 5589
+                                55488 55<br> <strong>Email:</strong> info@example.com<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>About AlphaStuddy</h3>
+                            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa
+                                magna
+                                derita valies
+                                darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                            <div class="social-links mt-3"> <a href="#" class="twitter"><i
+                                        class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i
+                                        class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i
+                                        class="bx bxl-instagram"></i></a> <a href="#" class="linkedin"><i
+                                        class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright"> &copy; Copyright <strong><span>AlphaStuddy</span></strong>. All Rights
+                    Reserved
+                </div>
+                <div class="credits"> Designed by <a href="#">AlphaStuddy</a> </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <script src="../login_button_visibility.js"></script>
+        <script src="../script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.about-section-image{
+    background-image: url('image/services.jpg');
+    background-size: cover;
+}
+.service-card-section{
+    margin: 50px;
+}

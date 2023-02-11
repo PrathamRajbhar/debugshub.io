@@ -1,0 +1,37 @@
+.info-card {
+    padding-top: 80px;
+}
+.profile-image {
+    padding: 20px;
+}
+
+.information {
+    margin-top: 20px;
+}
+
+
+.profiles-social-link{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.profiles-social-link a i{
+    margin: 10px;
+    background-color: rgb(33, 35, 36);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+
+}
+.profiles-social-link .twitter i:hover{
+    background-color: #1da1f2;
+    transition: 0.5s;
+}
+.profiles-social-link .facebook i:hover{
+    background-color: #4867aa;
+    transition: 0.5s;
+}
+.profiles-social-link .instagram i:hover{
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    transition: background 0.5s;
+}

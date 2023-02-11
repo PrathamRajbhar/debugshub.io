@@ -1,0 +1,10 @@
+.about-section-image{
+    background-image: url('image/contact-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 0.9;
+}
+.contact-form{
+    padding: 10px;
+}

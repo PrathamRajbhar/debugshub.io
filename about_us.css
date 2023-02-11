@@ -1,0 +1,21 @@
+.about-section-image{
+    background-image: url('image/about.jpg');
+    color: white;
+}
+.about-desc{
+    color: #ddd;
+}
+#community-about-btn{
+    color: white;
+    text-decoration: none;
+}
+.title-about{
+    font-size: 30px;
+}
+@media only screen and (max-width: 1000px) {
+    .about-main-image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

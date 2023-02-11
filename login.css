@@ -1,0 +1,65 @@
+
+.contact-or-divider{
+    margin: 25px;
+}
+.contact-or-divider p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #000; */
+    text-align: center;
+    text-transform: uppercase;
+}
+.login-btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.login-btn{
+    width: 100%;
+}
+.login-section{
+    padding-top: 20px;
+}
+.form-inputs{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#success-notifacation{
+    display: none;
+}
+#uname-errors{
+    color: red;
+    margin-left: 12px;
+    display: none;
+}
+#pass-errors{
+    color: red;
+    margin-left: 12px;
+    display: none;
+}
+.social-btn
+{
+    border: none;
+}
+.g-signin2{
+    width: 100%;
+}
+.forget-btn{
+    border: none;
+    background: none;
+    color: #005cc8;
+    text-decoration: underline;
+}
+.otp-section{
+    display: none;
+}
+#verify_btn{
+    display: none;
+}
+#login-title{
+    font-weight: 700;
+}
+.fab {
+    margin-right: 13px;
+  }

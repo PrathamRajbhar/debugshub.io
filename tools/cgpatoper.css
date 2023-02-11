@@ -1,0 +1,23 @@
+.scgp-input{
+    width: 40%;
+    
+}
+.jumbotron{
+    border-radius: 10px;
+    margin-left: 50px;
+    transition: 0.5s;
+
+}
+.scgp-input{
+    /* visibility: hidden; */
+    transition: 0.5s;
+}
+#cgpaoutput{
+    transition: 0.5s;
+}
+@media only screen and (max-width: 1000px) {
+    .scgp-input{
+        width: 75%;
+        
+    }
+}
